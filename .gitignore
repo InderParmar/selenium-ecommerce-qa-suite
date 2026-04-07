@@ -1,0 +1,40 @@
+# ── Virtual environment ──────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python cache ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Pytest cache ─────────────────────────────────────────────────
+.pytest_cache/
+.cache/
+
+# ── Test reports & artifacts (generated, not source) ─────────────
+# ── Test reports & artifacts (generated, not source) ─────────────
+reports/report*.html
+reports/screenshots/*
+reports/logs/*
+!reports/screenshots/.gitkeep
+!reports/logs/.gitkeep
+
+# ── IDE / editor ─────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+
+# ── OS files ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Secrets / env ────────────────────────────────────────────────
+.env
+*.env
+
+# ── WebDriver binaries (webdriver-manager caches these) ──────────
+.wdm/
+drivers/
