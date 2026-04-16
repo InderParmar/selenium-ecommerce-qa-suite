@@ -1,8 +1,8 @@
 attrs==26.1.0
 certifi==2026.2.25
 charset-normalizer==3.4.7
-configparse==0.1.5
 configparser==7.2.0
+ddt==1.7.2
 execnet==2.1.2
 h11==0.16.0
 idna==3.11
