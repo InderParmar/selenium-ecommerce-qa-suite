@@ -1,0 +1,14 @@
+[
+    {
+      "first_name": "John",
+      "last_name": "Doe", 
+      "zip": "M5V2T6",
+      "expected": "success"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "zip": "",
+      "expected": "zip_error"
+    }
+  ]
