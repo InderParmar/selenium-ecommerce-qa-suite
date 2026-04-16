@@ -37,7 +37,7 @@ class TestInventory:
 
     def test_product_count_is_six(self):
         """Exactly 6 product cards are displayed on the inventory page."""
-        product_count = self.inventory_page.get_product_option()
+        product_count = self.inventory_page.get_product_count()
         assert product_count == 6, (
             f"Expected 6 products, found {product_count}."
         )
