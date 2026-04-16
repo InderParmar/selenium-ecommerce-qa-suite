@@ -12,7 +12,7 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-class InventoryPage(BasePage):
+class Inventory_page(BasePage):
     """
     Page Object for /inventory.html — the main product listing page.
     Covers product retrieval, sort validation, and cart interaction.
@@ -80,5 +80,5 @@ class InventoryPage(BasePage):
 
     def go_to_cart(self):
         self.click_element((By.CSS_SELECTOR, self._SHOPPING_CART_ICON))
-        from pages.cart_page import CartPage
-        return CartPage(self.driver)
+        from pages.cart_page import Cart_page
+        return Cart_page(self.driver)

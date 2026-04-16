@@ -11,7 +11,7 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-class CartPage(BasePage):
+class Cart_page(BasePage):
     """
     Page Object for /cart.html.
     Validates cart contents, item prices, and navigates to Checkout or back to Inventory.
@@ -68,10 +68,10 @@ class CartPage(BasePage):
 
     def continue_shopping(self):
         self.click_element((By.CSS_SELECTOR, self._CONTINUE_SHOPPING))
-        from pages.inventory_page import InventoryPage
-        return InventoryPage(self.driver)
+        from pages.inventory_page import Inventory_page
+        return Inventory_page(self.driver)
 
     def proceed_to_checkout(self):
         self.click_element((By.CSS_SELECTOR, self._CHECKOUT_BUTTON))
-        from pages.checkout_page import CheckoutPage
-        return CheckoutPage(self.driver)
+        from pages.checkout_page import Checkout_page
+        return Checkout_page(self.driver)

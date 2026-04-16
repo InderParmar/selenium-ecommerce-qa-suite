@@ -11,7 +11,7 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-class CheckoutPage(BasePage):
+class Checkout_page(BasePage):
     """
     Page Object for /checkout-step-one.html and /checkout-step-two.html.
     Handles form entry, field validation errors, and order total verification.
@@ -93,5 +93,5 @@ class CheckoutPage(BasePage):
 
     def click_back_home(self):
         self.click_element((By.CSS_SELECTOR, self._BACK_HOME_BUTTON))
-        from pages.inventory_page import InventoryPage
-        return InventoryPage(self.driver)
+        from pages.inventory_page import Inventory_page
+        return Inventory_page(self.driver)

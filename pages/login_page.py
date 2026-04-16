@@ -11,7 +11,7 @@ from utils.logger import get_logger
 logger = get_logger(__name__)
 
 
-class LoginPage(BasePage):
+class Login_page(BasePage):
     """
     Page Object for https://www.saucedemo.com (login screen).
     Handles credential entry, login submission, and error state validation.
