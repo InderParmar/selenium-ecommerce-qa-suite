@@ -53,6 +53,13 @@ def setup(request, browser):
             logger.info("CI environment detected — running Chrome in headless mode")
 
         driver = webdriver.Chrome(options=chrome_options)
+        
+    elif browser == "firefox":
+        from selenium.webdriver.firefox.options import Options as FirefoxOptions
+        firefox_options = FirefoxOptions()
+        if os.environ.get("CI"):
+            firefox_options.add_argument("--headless")
+        driver = webdriver.Firefox(options=firefox_options)
 
     elif browser == "safari":
         driver = webdriver.Safari()
